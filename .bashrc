@@ -91,10 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias agx='ssh agx@192.168.1.135'
-#alias agx='ssh agx@10.10.10.133'
-alias pallav='ssh pallavnrt@10.10.10.100'
-alias nx='ssh nx@192.168.1.135'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -118,50 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/vathsa/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/vathsa/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/vathsa/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/vathsa/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-alias tl="tmux ls"
-alias ta="tmux attach -t"
-alias tk="tmux kill-session -t"
-alias tKK="tmux kill-server"
-alias tn="tmux new-session -s"
-
-export EDITOR=vim
-conda activate one
-source /opt/ros/melodic/setup.bash
-
-# CATKIN_WS
-source ${HOME}/kalibr_ws/devel/setup.bash
-#source ${HOME}/Desktop/vslam_cpp/devel/setup.bash
-
-
-export PATH=$PATH:$HOME/catkin_ws/src/indoor-navigation-stack/ardupilot/Tools/autotest
-export PATH=/usr/lib/ccache:$PATH
-export PATH=/home/vathsa/.local/lib/python2.7/site-packages:$PATH
-source /usr/share/gazebo/setup.sh
-export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins
-GAZEBO_MODEL_PATH=$HOME/catkin_ws/src/indoor-navigation-stack/application-launch/models
-
-#export ROS_MASTER_URI=http://192.168.1.15:11311
-#export ROS_IP=192.168.1.42
-
-export rb5_ip=10.10.10.163
-alias rb5="ssh root@$rb5_ip"
-sudo bash ~/update_ip.sh $rb5_ip
-
-export ROS_MASTER_URI=http://$rb5_ip:11311
-export ROS_IP=10.10.10.177
