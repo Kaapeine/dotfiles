@@ -5,3 +5,5 @@ sudo apt install feh
 
 sudo apt install light
 sudo chmod +s /usr/bin/light
+
+sudo apt install playerctl
