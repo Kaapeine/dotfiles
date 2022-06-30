@@ -41,7 +41,7 @@ floating_modifier $mod
 
 # i3-gaps
 #border_radius 4
-gaps inner 7 
+gaps inner 10
 gaps outer 1
 for_window [class="^.*"] border pixel 2
 
@@ -110,16 +110,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1|Firefox " 
-set $ws2 "2|Notes" 
-set $ws3 "3|Editor "
-set $ws4 "4|Explorer "
-set $ws5 "5|Reading"
+set $ws1 "1: Firefox " 
+set $ws2 "2: Terminals " 
+set $ws3 "3: Editor "
+set $ws4 "4: Explorer "
+set $ws5 "5: Reading"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10|Music "
+set $ws10 "10: Music "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -154,7 +154,6 @@ for_window [class="firefox"] move container to workspace $ws1
 for_window [class="Code"] move container to workspace $ws3
 for_window [class="Org.gnome.Nautilus"] move container to workspace $ws4
 for_window [class="okular"] move container to workspace $ws5
-for_window [class="obsidian"] move container to workspace $ws2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -201,8 +200,6 @@ client.background       #F8F8F2
 
 bar {
   status_command i3status
-  position top
-  separator_symbol ⁞
   colors {
     background #282A36
     statusline #F8F8F2
@@ -244,4 +241,3 @@ exec_always feh --bg-scale /home/vathsa/Pictures/wallpaperbetter.com_1920x1080.j
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 exec spotify
-exec obsidian
