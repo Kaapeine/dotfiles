@@ -3,6 +3,8 @@
 cp -r ~/.config/i3/ .
 cp -r ~/.config/i3status .
 cp -r ~/.config/terminator .
+cp -r ~/.vim .
+cp ~/.vimrc .
 cp ~/.bashrc .
 
 git add .

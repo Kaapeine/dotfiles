@@ -1,19 +1,20 @@
 [global_config]
   borderless = True
   title_transmit_bg_color = "#ffffff"
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
   title_use_system_font = False
   title_font = SF Pro Display 10
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#232537"
     background_darkness = 1.0
     background_type = transparent
     cursor_shape = ibeam
-    cursor_color = "#aaaaaa"
+    cursor_color = "#fecd5e"
     font = SF Mono 15
-    foreground_color = "#839496"
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    foreground_color = "#ecf0fe"
+    palette = "#03073c:#c6004a:#acf157:#fecd5e:#525fb8:#986f82:#968763:#ecf0fc:#6c5b30:#da4b8a:#dbffa9:#fee6a9:#b2befa:#fda5cd:#a5bd86:#f6ffec"
     use_system_font = False
 [layouts]
   [[default]]
