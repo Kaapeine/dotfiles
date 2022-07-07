@@ -1,11 +1,11 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install terminator vim git curl 
+# Utilities
+sudo apt install terminator vim git curl htop
+# Apps
 sudo apt install calibre keepassxc
-
 sudo snap install spotify
 sudo snap install okular
-
 sudo apt install vlc
 
