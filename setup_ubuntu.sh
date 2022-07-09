@@ -8,4 +8,6 @@ sudo apt install calibre keepassxc
 sudo snap install spotify
 sudo snap install okular
 sudo apt install vlc
+# Obsidian
+curl https://rclone.org/install.sh | sudo bash
 

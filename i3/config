@@ -223,6 +223,24 @@ hide_edge_borders both
 # bar {
 #        status_command i3status
 #}
+#
+
+# i3 Exit
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+
+  bindsym l exec i3-msg exit
+
+  bindsym r exec systemctl reboot
+
+  bindsym s exec systemctl shutdown
+
+  bindsym Escape mode "default"
+
+  bindsym Return mode "default"
+
+}
+
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
