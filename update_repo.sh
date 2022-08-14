@@ -8,6 +8,7 @@ cp -r ~/.config/polybar .
 cp -r ~/.vim .
 cp ~/.vimrc .
 cp ~/.bashrc .
+cp ~/.bash_aliases .
 
 git add .
 git commit -m "Updating..."
