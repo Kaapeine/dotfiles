@@ -131,8 +131,22 @@ else
     fi
 fi
 
+echo "source /etc/profile.d/bash_completion.sh" >> ~/.bashrc
+
 unset __conda_setup
 conda deactivate
 # <<< conda initialize <<<
 source /opt/ros/noetic/setup.bash
+source ~/ros_ws/vio_ws/devel/setup.bash
 #conda activate carla
+
+export LFS=/mnt/lfs
+eval "$(starship init bash)"
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
+source /etc/profile.d/bash_completion.sh
