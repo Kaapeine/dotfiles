@@ -131,8 +131,6 @@ else
     fi
 fi
 
-echo "source /etc/profile.d/bash_completion.sh" >> ~/.bashrc
-
 unset __conda_setup
 conda deactivate
 # <<< conda initialize <<<
@@ -143,10 +141,5 @@ source ~/ros_ws/vio_ws/devel/setup.bash
 export LFS=/mnt/lfs
 eval "$(starship init bash)"
 source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
-source /etc/profile.d/bash_completion.sh
+export PATH="$(npm bin):$PATH"
+export XDG_DATA_DIRS="/home/vathsa/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
