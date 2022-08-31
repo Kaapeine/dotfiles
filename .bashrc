@@ -139,7 +139,7 @@ source ~/ros_ws/vio_ws/devel/setup.bash
 #conda activate carla
 
 export LFS=/mnt/lfs
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 source /etc/profile.d/bash_completion.sh
 export PATH="$(npm bin):$PATH"
 export XDG_DATA_DIRS="/home/vathsa/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"

@@ -11,6 +11,8 @@ cp ~/.vimrc .
 cp ~/.bashrc .
 cp ~/.bash_aliases .
 
+apt list > apt_list.txt
+
 git add .
 git commit -m "Updating..."
 git push
