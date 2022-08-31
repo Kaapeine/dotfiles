@@ -8,8 +8,8 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#232537"
-    background_darkness = 1.0
+    background_color = "#020306"
+    background_darkness = 0.0
     background_type = transparent
     cursor_color = "#fecd5e"
     font = SF Mono 15
